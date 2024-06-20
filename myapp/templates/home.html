@@ -1,11 +1,62 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PassGestor</title>
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main/atoms.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main/molecules.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main/organisms.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main/templates.css' %}">
 </head>
-<body>
-    <H1>Hola Mundo!</H1>
+<body class="body">
+    <div class="template_header"><h1>PassGestor</h1><span></span></div>
+    <div class="RESPONSIVE_BASE_CONTAINER template_main_cont">
+        <!-- # TODO: EXPLORADOR -->
+        <div class="organism_base_one">
+            <button>
+                <img src="{% static 'img/icon_02.png' %}" alt="">
+                Todas mis contraseñas
+            </button>
+            <button>
+                <img src="{% static 'img/icon_03.png' %}" alt="">
+                Variables completas
+            </button>
+            <button>
+                <img src="{% static 'img/icon_01.png' %}" alt="">
+                Papelera
+            </button>
+        </div>
+        <!-- # TODO: VIEW ELEMENTS -->
+        <div class="organism_base_two">
+            <div class="search">
+                <img src="{% static 'img/icon_08.png' %}" alt="">
+                <input type="text" placeholder="Buscar">
+            </div>
+            <!-- ANCHOR : ELEMENTS -->
+            <section>
+                <img class="img_element" src="{% static 'img/icon_10.png' %}" alt="">
+                <aside>
+                    <p class="name">Cuenta de Netflix</p>
+                    <p class="direction">www.netflix.com</p>
+                </aside>
+                <img class="img_type" src="{% static 'img/icon_11.png' %}" alt="">
+            </section>
+            <section>
+                <img class="img_element" src="{% static 'img/icon_10.png' %}" alt="">
+                <aside>
+                    <p class="name">Cuenta de Netflix</p>
+                    <p class="direction">www.netflix.com</p>
+                </aside>
+                <img class="img_type" src="{% static 'img/icon_11.png' %}" alt="">
+            </section>
+        </div>
+        <!-- # TODO: VIEW CONTET OF ELEMENTS -->
+        <div class="organism_base_tree"></div>
+    </div>
 </body>
 </html>

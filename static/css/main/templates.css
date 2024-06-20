@@ -1,0 +1,25 @@
+.template_main_cont {
+    display: flex;
+    overflow: hidden;
+    border-radius: 5px;
+    margin: 20px auto;
+    background: red;
+    height: calc(100vh - 110px);
+}
+.template_header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+
+    & h1{
+        margin: auto;
+        font-weight: bold;
+    }
+
+    & span {
+        height: 3px;
+        width: 100%;
+        background: var(--color_base_01);
+    }
+}
